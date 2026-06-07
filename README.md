@@ -62,10 +62,9 @@ Because the target is measured in units of `$100,000`, an MAE of `0.533` means t
 | --- | --- |
 | `task1_ml_linear_regression.ipynb` | Main Jupyter Notebook with code, comments, plots, model training, and evaluation |
 | `task1_ml_linear_regression_report.pdf` | Short 4-page PDF report summarizing EDA, model, metrics, and improvement ideas |
-| `figures/` | Generated EDA and evaluation plots |
 | `task1_metrics.json` | Saved model metrics |
 | `task1_feature_coefficients.csv` | Saved linear regression coefficients |
-| `generate_task1_deliverables.py` | Reproducible script that regenerates notebook, report, figures, and metrics |
+| `task1_deliverables.py` | Reproducible script that regenerates notebook, report, figures, and metrics |
 | `requirements.txt` | Python packages required to run the project |
 
 ## How to Run
@@ -79,7 +78,7 @@ pip install -r requirements.txt
 Regenerate all deliverables:
 
 ```bash
-python generate_task1_deliverables.py
+python task1_deliverables.py
 ```
 
 ## Improvement Ideas
@@ -90,23 +89,4 @@ python generate_task1_deliverables.py
 - Investigate capped target values and outliers
 - Compare results against a simple baseline model
 
-## GitHub Upload Checklist
 
-Recommended files to upload:
-
-- `README.md`
-- `requirements.txt`
-- `task1_ml_linear_regression.ipynb`
-- `task1_ml_linear_regression_report.pdf`
-- `generate_task1_deliverables.py`
-- `task1_metrics.json`
-- `task1_feature_coefficients.csv`
-- `figures/`
-
-Do not upload:
-
-- `data/`
-- `models/`
-- `.ipynb_checkpoints/`
-- `.jupyter_runtime/`
-- Any temporary cache files
